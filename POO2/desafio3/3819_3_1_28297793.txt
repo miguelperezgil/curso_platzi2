@@ -1,0 +1,75 @@
+clase Avion
+	privado definir codigo como caracter
+	privado definir capacidad_pasajeros como entero
+	privado definir capacidad_combustible como real
+	
+	
+	publico metodo getCodigo() como caracter
+		retornar codigo
+	fin metodo
+	
+	publico metodo setCodigo(nuevo_codigo) 
+		codigo=nuevo_codigo
+	fin metodo
+	
+	publico metodo getCapacidad_pasajeros() como entero
+		retornar capacidad_pasajeros
+	fin metodo
+	
+	publico metodo setCapacidad_pasajeros(nueva_capacidad_pasajeros) 
+		capacidad_pasajeros=nueva_capacidad_pasajeros
+	fin metodo
+	
+	publico metodo getCapacidad_combustible() como real
+		retornar capacidad_combustible
+	fin metodo
+	
+	publico metodo setCapacidad_combustible(nueva_capacidad_combustible) 
+		capacidad_combustible=nueva_capacidad_combustible
+	fin metodo
+	
+fin clase
+
+clase Piloto
+	privado definir nombre como caracter
+	privado definir edad como entero
+	privado definir sexo como caracter
+	
+	publico metodo getNombre() como caracter
+		retornar nombre
+	fin metodo
+	
+	publico metodo setNombre(nuevoNombre)
+		nombre = nuevoNombre
+	fin metodo
+	
+	publico metodo getEdad() como entero
+		retornar edad
+	fin metodo
+
+	publico metodo setEdad(nueva_edad)
+		edad=nueva_edad
+	fin metodo
+
+	publico metodo getSexo como caracter
+		retornar sexo
+	fin metodo
+
+	publico metodo setSexo(nuevo_sexo)
+		sexo=nuevo_sexo
+	fin metodo	
+
+fin clase
+
+clase Vuelo 
+	privado definir ciudad_destino como caracter
+	privado definir hora_de_salidad como caracter
+	privado definir cantidad_pasajeros
+
+fin clase
+
+algoritmo
+	definir precio_pasaje como real
+
+
+fin algoritmo

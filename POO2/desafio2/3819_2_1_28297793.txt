@@ -1,0 +1,64 @@
+clase Vehiculo
+	//entradas
+	privado nombreCliente como caracter
+	privado modeloVehiculo como caracter
+	privado costoDiario como real 
+	privado diasAlquiler como 
+	
+	metodo leerDatos()
+		mostrar "Introduzca el modelo del vehiculo"
+		leer modeloVehiculo
+		mostrar "Introduzca el nombre del cliente"
+		leer nombreCliente
+		mostrar "Introduzca los dias de alquiler del vehiculo"
+		leer diasAlquiler
+		mostrar "Introduzca el costo de alquiler diario del vehiculo"
+		leer costoDiario
+	fin metodo
+
+	metodo calcularMontoTotal()
+		retornar diasAlquiler*costoDiario
+	fin metodo
+	
+	metodo calcularPagoInicial()
+		retornar calcularMontoTotal() * 35/100
+	fin metodo
+	
+	metodo calcularCuota()
+		retornar (calcularMontoTotal() - calcularPagoInicial())/diasAlquiler
+	fin metodo
+	
+	metodo mostrarSalidas salidas
+		mostrar "Nombre del cliente: " nombreCliente
+		mostrar "El modelo del vehiculo es: " modeloVehiculo
+		mostrar "El costo diario de alquiler del vehiculo: " costoDiario
+		mostrar "Dias de alquiler: " diasAlquiler
+		mostrar "El monto total es: " calcularMontoTotal()
+		mostrar "El pago inicial es: " calcularPagoInicial()
+		mostrar "El monto de cuata diaria es: " calcularCuota()
+	fin metodo
+	
+fin clase		
+
+algoritmo desafi2
+
+	definir vehiculo1, vhiculo2 como Vehiculo
+	
+	vehiculo1=new Vehiculo
+	vehiculo2=new Vehiculo
+	
+	vehiculo1.leerDatos()
+	//vehiculo1.calcularMontoTotal()
+	//vehiculo1.calcularPagoInicial()
+	//vehiculo1.calcularCuota()
+	vehiculo1.mostrarSalidas()
+	
+	vehiculo2.leerDatos()
+	//vehiculo2.calcularMontoTotal()
+	//vehiculo2.calcularPagoInicial()
+	//vehiculo2.calcularCuota()
+	vehiculo2.mostrarSalidas()
+	
+	
+	
+fin algoritmo	

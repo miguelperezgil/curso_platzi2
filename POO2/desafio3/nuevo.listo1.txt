@@ -1,0 +1,194 @@
+clase Avion
+	privado definir codigo como caracter
+	privado definir capacidad_pasajeros como entero
+	privado definir capacidad_combustible como real
+	
+	publico metodo getCodigo() como caracter
+		retornar codigo
+	fin metodo
+	publico metodo setCodigo(nuevo_codigo) 
+		codigo=nuevo_codigo
+	fin metodo
+	
+	publico metodo getCapacidad_pasajeros() como entero
+		retornar capacidad_pasajeros
+	fin metodo
+	publico metodo setCapacidad_pasajeros(nueva_capacidad_pasajeros) 
+		capacidad_pasajeros=nueva_capacidad_pasajeros
+	fin metodo
+	
+	publico metodo getCapacidad_combustible() como real
+		retornar capacidad_combustible
+	fin metodo
+	publico metodo setCapacidad_combustible(nueva_capacidad_combustible) 
+		capacidad_combustible=nueva_capacidad_combustible
+	fin metodo
+	
+	publico metodo Avion()
+		codigo=""
+		cantidad_pasajeros=0
+		capacidad_combustible=0
+	fin metodo
+	
+fin clase
+
+clase Piloto
+	privado definir nombre como caracter
+	privado definir edad como entero
+	privado definir sexo como caracter
+	
+	publico metodo getNombre() como caracter
+		retornar nombre
+	fin metodo
+	
+	publico metodo setNombre(nuevoNombre)
+		nombre = nuevoNombre
+	fin metodo
+	
+	publico metodo getEdad() como entero
+		retornar edad
+	fin metodo
+
+	publico metodo setEdad(nueva_edad)
+		edad=nueva_edad
+	fin metodo
+
+	publico metodo getSexo como caracter
+		retornar sexo
+	fin metodo
+
+	publico metodo setSexo(nuevo_sexo)
+		sexo=nuevo_sexo
+	fin metodo	
+	
+	publico metodo Piloto()
+		nombre="sin nombre"
+		edad=0
+		sexo="sin sexo"
+	fin metodo
+fin clase
+
+clase Vuelo 
+	privado definir ciudad_destino como caracter
+	privado definir hora_de_salida como caracter
+	privado definir cantidad_pasajeros
+	
+	publico metodo getCiudad_destino como caracter
+		retornar ciudad_destino
+	fin metodo
+
+	publico metodo setCiudad_destino(nueva_ciudad_destino)
+		ciudad_destino=nueva_ciudad_destino
+	fin metodo
+
+	publico metodo getHora_de_salida como caracter
+		retornar hora_de_salida
+	fin metodo
+
+	publico metodo setHora_de_salida(nueva_hora_de_salida)
+		hora_de_salida=nueva_hora_de_salida
+	fin metodo
+
+	publico metodo getCantidad_pasajeros como entero
+		retornar cantidad_pasajeros
+	fin metodo
+
+	publico metodo setCantidad_pasajeros(nueva_cantidad_pasajeros)
+		cantidad_pasajeros=nueva_cantidad_pasajeros
+	fin metodo	
+	
+	publico metodo Vuelo()
+		ciudad_destino = "sin destino"
+		hora_de_salida = "sin hora"
+		cantidad_pasajeros = 0
+	fin metodo
+	
+	publico metodo determinarPrecio(ciudad_destino)
+		
+			si ciudad_destino="Caracas"
+				retornar 20
+			sino
+				si ciudad_destino="Porlamar"
+					retornar 30
+				sino
+					si ciudad_destino="Puerto Ordaz
+						retornar 35
+					fin si
+				fin si
+			fin si	
+			
+	fin metodo
+	
+	publico metodo calcularMontoDelVuelo()
+		retornar cantidad_pasajeros*determinarPrecio(ciudad_destino)
+	fin metodo
+	
+	publico metodo elAvionVaLleno()
+		si cantidad_pasajeros < avion_1.getCapacidad_pasajeros() entonces
+			retornar mostrar "El avion no va lleno"
+		sino
+			si cantidad_pasajeros = avion_1.getCapacidad_pasajeros() entonces
+			 retornar mostrar "El avion va lleno"
+	fin metodo
+	
+	
+	
+fin clase
+
+algoritmo
+	definir precio_pasaje como real
+	definir vuelo1 como Vuelo
+	definir piloto_1 como Piloto
+	definir avion_1 como Avion
+	definir cod como caracter
+	definir capacidadPasj como entero
+	definir capacidadCom como real
+	definir nom como caracter
+	definir edad como entero
+	definir sex como caracter
+	definir destinoVuelo como caracter
+	definir hora como caracter
+	definir cantidadPasj como entero
+	
+	mostrar "Intr. el codigo del avion"
+	leer cod
+	mostrar "Intr. la capacidad de pasajeros del avion"
+	leer capacidadPasj
+	mostrar "Intr. la capacida de combustible del avion2
+	leer capacidadCom
+	mostrar "Intr. el nombre del piloto"
+	leer nom
+	mostrar "Intr. la edad del piloto"
+	leer edad
+	mostrar "Intr. el sexo del piloto"
+	leer sex
+	mostrar "Intr. la ciudad destino (Caracas, Porlamar o Puerto Ordaz)"
+	leer destinoVuelo
+	mostrar "Intr. la hora de salida del vuelo"
+	leer hora
+	mostrar "Intr. la cantidad de pasajeros para el vuelo"
+	leer cantidadPasj
+	
+	avion_1 = nuevo Avion()
+	avion_1.setCodigo(cod)
+	avion_1.setCapacidad_pasajeros(capacidadPasj)
+	avion_1.setCapacidad_combustible(capacidadCom)
+	
+	piloto_1 = nuevo Piloto()
+	piloto_1.setNombre(nom)
+	piloto_1.setEdad(edad)
+	piloto_1.setSexo(sex)
+	
+	vuelo1 = nuevo Alumno()
+	vuelo1.setCiudad_destino(destinoVuelo)
+	vuelo1.setHora_de_salida(hora)
+	vuelo1.setCantidad_pasajeros(cantidadPasj)
+	vuelo1.setAvion1(avion_1)
+	vuelo1.setPiloto1(piloto_1)
+	
+	mostrar "La ciudad destino del vuelo es: " vuelo1.getCiudad_destino
+	mostrar "El monto total del vuelo es: " vuelo1.calcularMontoDelVuelo()
+    vuelo1.elAvionVaLleno()
+	mostrar El nombre del piloto del vuelo es: " piloto_1.getNombre()
+
+fin algoritmo
