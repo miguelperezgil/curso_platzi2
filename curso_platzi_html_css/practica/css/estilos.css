@@ -1,4 +1,76 @@
-body{
-    background-color: antiquewhite ;
-    
+body {
+    background-image: url(https://images.pexels.com/photos/8180728/pexels-photo-8180728.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    font-size: 80px;
+    color: aliceblue;
+    box-sizing: border-box;
+    border: 12PX;
 }
+li {
+    color: rgb(255, 204, 0);
+    font-size: 20px;
+    list-style: none
+}
+
+.fruta {
+    background-color: aqua;
+}
+ol{
+    color: black;
+    text-decoration: none;
+}
+.tipo{
+    color: azure;
+    background-color: rgb(164, 18, 74);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.tamaño {
+    border: 12PX;
+    font-size: 40px;
+}
+.main-section {
+    padding-left: 0;
+}
+.main-section a {
+    text-decoration: none;
+}
+.main-section li:hover {
+    color: aliceblue;
+    font-size: 30px;
+}
+.main-section img {
+    margin: 10px;
+    border-radius: 30px;
+    border-width: 20px;
+    border-color: rgb(33, 127, 210);
+}
+    
+.main-nav {
+    margin: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: rgb(94, 70, 3);
+   
+} 
+.main-nav__iten {
+    display: inline-block;
+    font-size: 40px;
+
+}
+.main-nav__iten a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__iten a:hover {
+    color: rgb(250, 187, 0);
+}
+.main-nav__iten a:active {
+    color: rgb(126, 0, 244);
+}
+.main-nav__iten a::after {
+    content: " |";
+}
+

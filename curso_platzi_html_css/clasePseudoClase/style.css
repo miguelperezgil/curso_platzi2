@@ -1,0 +1,24 @@
+.main-nav{
+    margin: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: rgb(19, 149, 154);
+}
+.main-nav__iten{
+    display: inline-block;
+}
+.main-nav__iten a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.main-nav__iten a:hover{
+    color: rgb(0, 250, 150);
+}
+.main-nav__iten a:active{
+    color: rgb(126, 0, 244);
+}
+.main-nav__iten a::after{
+    content: " |";
+}
