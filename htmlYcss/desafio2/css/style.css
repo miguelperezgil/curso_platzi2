@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0%;
+}
+.header{
+    background-color: #EFD4CB;
+}
+
+.divLogo{
+    display: inline-block;
+
+}
+.spanNav{
+    color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 100px;
+
+}
+.divNavegacion{
+    display: inline-block;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.divNavegacion :hover{
+    color: #61561E;
+    font-size: 40px;
+}
+.mensaje{
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.mensajeAutor{
+    text-align: center;
+    font-size: 30px;
+
+}
+.mensaje{
+    display: inline-block;
+}
+
+.seccionUno{
+    background-image: url(https://www.bbva.com/wp-content/uploads/2019/06/A-0406-DiaMedioAmbiente-BBVA-1024x629.jpg);
+    height: 500px;
+    text-align: center;
+    
+}
+#estadisticas{
+    color: #B3813A;
+    text-align: center;
+}
+.info{
+    background-color: #9C9C9E;
+    
+}
+.footer{
+    background-image: url(https://futuroverdecdn.sfo2.cdn.digitaloceanspaces.com/wp-content/uploads/2022/04/BANNER-2-DESKTOP.png);
+    height: 300px;
+}
+.h1{
+    text-align: center;
+    color: aliceblue;
+}
+.article{
+    width: 30%;
+    height: 400px;
+    display: inline-block;
+    color: aliceblue;
+}
+.imgArticle{
+    width: 300px;
+    height: 250px;
+}
+.info .p{
+    margin: 10px;
+}
+/*ESTILOS DE LA PAGINA ANCLA*/
+.body2{
+    background-image: url(https://www.bbva.com/wp-content/uploads/2019/06/A-0406-DiaMedioAmbiente-BBVA-1024x629.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.casa{
+    text-decoration: none;
+}
+#listas{
+    height: 300px;
+}
+.articleListas{
+    width: 50%;
+    height: 300px;
+    display: inline-block;
+    color: black;
+    
+}
+
+.casa{
+    color: black;
+}
+.casa:hover{
+    color: rgb(11, 155, 27);
+    font-size: 60px;
+}
+.navAncla{
+    text-align: center;
+    font-size: 50px;
+}
+li{
+    font-size: 30px;
+    background-color: #846012;
+}
+ul{
+    list-style: none;
+}
+
+.parrafoLista{
+    color: black;
+}
+.parrafoLista:hover{
+    display: inline-block;
+    color: rgb(4, 4, 4);
+    background-color: #FED8AB;
+    border-radius: 10px;
+}
+.subTitle{
+    text-align: center ;
+}

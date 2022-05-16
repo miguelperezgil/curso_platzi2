@@ -1,0 +1,112 @@
+
+/* agregando las fuentes */
+@font-face{
+    font-family: "Monserrat";
+    src: url(../fonts/MontserratAlternates-Regular.ttf);
+}
+@font-face{
+    font-family: "Orbitron";
+    src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
+/* estilos para el body */
+body{
+    font-family: "Monserrat";
+    background: radial-gradient(circle at 30% 107%, #a5a388 0%, #79743e 5%, #995f5a 45%,#b9599a 60%,#5669a3 90%);
+}
+/* estilos para la barra de navegacion */
+.nav{
+    letter-spacing: normal;
+    word-spacing: 10px;
+    font-size: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, red, blue);
+}
+.logo{
+    text-align: center;    
+}  
+.logo_img{
+    width: 100px;
+    height: 100px;
+    transform: rotate(20deg);
+    
+}  
+.logo_img:hover{
+    transform: scale(1.5);
+    
+}
+.anclas_nav{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: -2px 2px 2px;
+    color: rgb(233, 226, 226);
+
+}
+/* estilos para las listas */
+h1{
+    color: rgb(220, 19, 19);
+    text-align: center;
+    text-transform: uppercase;
+}
+.section_list{
+    font-family: "Orbitron";
+   
+    line-height: 1em;
+    color: aliceblue;
+    
+}
+ul{
+    list-style: none;
+}
+li:hover{
+    color: #000000;
+   
+}
+li:hover::after{
+    content: "..........................................................(pagina N°)";
+}
+/* estilo para el video */
+.sectionVideo{
+    text-align: center;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+
+}
+.footer{
+    background-image: url(../multimedia/copa2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px;
+    margin: 0%;
+    
+}
+.footer_autor{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+.correo{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(52, 77, 77);
+    font-weight: 900;
+}
+.gmail{
+    text-align: center;
+    font-weight: 900;
+}
+.correo:hover{
+    color: black;
+    background: linear-gradient(to right, red, blue);
+    text-align: center;
+}
+.frase{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    text-shadow: -4px 4px 4px;
+    font-size: 50px;
+}
+
+
+

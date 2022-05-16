@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio3</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="reproducir()">
+    <header>
+        <div class="logo">
+            <img class="logo_img" src="./multimedia/uefa.png" alt="">
+        </div>
+        <nav class="nav">
+            <a class="anclas_nav" href="">Home</a>
+            <a class="anclas_nav" href="#sectionVideo">Video</a>
+            <a class="anclas_nav" href="">Mas</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section_list">
+            <h1>Lista</h1>
+            <ul>
+                <li>Resumen</li>
+                <li>El mercado Financiero</li>
+                <li>Metodo</li>
+                <ul>
+                    <li>Tipos de mercado Financiero</li>
+                    <ul>
+                        <li>Por los Activos Transmitidos</li>
+                        <ul>
+                            <li>Mercado Monetario</li>
+                            <li>Mercado de capitales</li>
+                        </ul>
+                        <li>Por los Activos Heredados</li>
+                        <ul>
+                            <li>Mercado Buratil</li>
+                            <ul>
+                                <li>En Funcion de su Estructura</li>
+                                <li>En Funcion de su Tamaño</li>
+                            </ul>
+                            <li>Mercado Estatico</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <li>Resultados</li>
+                <li>Discusion</li>
+                <li>Referencias</li>
+                <li>Apendice</li>
+                <ul>
+                    <li>Apendice A. Lista de Materiales</li>
+                    <li>Apendice B. Lista de Estdiantes</li>
+                </ul>
+            </ul>
+        </section>
+        <section id="sectionVideo" class="sectionVideo">
+            <video class="video" src="./video/video.mp4" width="90%" loop controls></video>
+        </section>
+    </main>
+    <footer class="footer">
+        <audio id="audio" src="./audio/SpanishBuleríasGuitar.mp3" autoplay ></audio>
+        <p class="footer_autor">By Miguel Antonio Perez Gil</p>
+        <p class="gmail"><a display: inline-block; class="correo" href="">miguelin2000000@gmail.com</a></p>
+        <p class="frase">La fiebre del futbol</p>
+    </footer>
+    <script>
+        var reproductor = document.getElementById("audio");
+        function reproducir(){
+            this.reproductor.play();
+        }
+    </script>
+</body>
+</html>
